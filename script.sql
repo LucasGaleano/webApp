@@ -1,0 +1,15 @@
+insert into users (name,password) values ('daniel','naq3jehkjnawjnekaw3ejwenkw');
+insert into users (name,password) values ('usuario1','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('dany','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('lucas','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('omar','4d23vtt432vt3frd34dr32rs');
+insert into users (name,password) values ('federico','v3fq4dcwfqcf32d2f5345');
+insert into users (name,password) values ('santiago','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('gustavo','ewqewq23vtt432vt3frd34dr32rs');
+insert into users (name,password) values ('usuario1','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('daniela','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('damian','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('usuario1','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('rodrigo','r23fc3u65365vht3gf435ttwd3');
+insert into users (name,password) values ('usuarioAlgo','432dcqvhnd32skjqhd3u2hk32h4');
+insert into users (name,password) values ('jose','fda323f23f32ede2e23e23h6467i476');
