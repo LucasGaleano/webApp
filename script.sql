@@ -2,7 +2,7 @@ create database webApp;
 use webApp;
 create table users (id int auto_increment primary key, name varchar(40), password varchar(1024), role varchar(30));
 GRANT SELECT, INSERT ON webApp.* TO 'lucas'@'localhost' IDENTIFIED BY 'lucas';
-insert into users (name,password,role) values ('admin','admin','admin');
+insert into users (name,password,role) values ('admin','$2y$10$1G.VafYoGAGq4BMei63L7u6R40orhxGa87OyHu64WqZweAptUlhZe','admin');
 insert into users (name,password,role) values ('daniel','naq3jehkjnawjnekaw3ejwenkw','admin');
 insert into users (name,password,role) values ('usuario1','432dcqvhnd32skjqhd3u2hk32h4','client');
 insert into users (name,password,role) values ('dany','432dcqvhnd32skjqhd3u2hk32h4',,'client');
