@@ -1,18 +1,15 @@
 <?php
-define("SERVER","localhost");
-define("USER","lucas");
-define("PASS","lucas");
-define("DB","pagina");
+require_once "config.php";
 
 class Database{
   function connectDB(){
     //echo "connection... ";
   try{
-    $conn = new PDO("mysql:host=" . SERVER.";dbname=".DB,USER,PASS);
+    $conn = new PDO("mysql:host=".SERVER.";dbname=".DB,USER,PASS);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //echo "Connected successfully".  "<br/>";
   }catch(PDOException $e){
-    //echo "Connected fail";
+    echo '<script>alert("Connection fail");</script>';
   }
   return $conn;
   }
