@@ -5,7 +5,11 @@ EGrappler.com
 All Rights Reserved.
 
 */
-
+.form-control{
+	width: 90%;
+	height: 80%;
+ 	margin: 2%
+}
 body {
 	font-size: 13px;
 	font-family: 'Open Sans', Arial, sans-serif;
