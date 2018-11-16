@@ -1,5 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
+<?php
+require_once('php/import.php');
+require_once('php/session.php');
+?>
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +15,13 @@
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
 	<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
 	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
-	<?php require_once 'functions.php'; ?>
+	<?php require_once 'php/functions.php'; ?>
 </head>
 <body>
 
-<?php
-include('navbar.html');
-?>
+	<?php
+	include('navbar.php');
+	?>
 
 	<div class="wrapper">
 		<div class="container">
@@ -51,14 +57,14 @@ include('navbar.html');
 										?>
 									</tbody>
 									<tfoot>
-											<?php
-											traerHeaders('users');
-											?>
+										<?php
+										traerHeaders('users');
+										?>
 									</tfoot>
 								</table>
 							</div>
 						</div><!--/.module-->
-					<br />
+						<br />
 					</div><!--/.content-->
 				</div><!--/.span9-->
 			</div>
@@ -73,17 +79,17 @@ include('navbar.html');
 		</div>
 	</div>
 
-	<script src="scripts/jquery-1.9.1.min.js"></script>
-	<script src="scripts/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="scripts/datatables/jquery.dataTables.js"></script>
+	<script src="js/datatables/jquery.dataTables.js"></script>
 	<script>
-		$(document).ready(function() {
-			$('.datatable-1').dataTable();
-			$('.dataTables_paginate').addClass("btn-group datatable-pagination");
-			$('.dataTables_paginate > a').wrapInner('<span />');
-			$('.dataTables_paginate > a:first-child').append('<i class="icon-chevron-left shaded"></i>');
-			$('.dataTables_paginate > a:last-child').append('<i class="icon-chevron-right shaded"></i>');
-		} );
+	$(document).ready(function() {
+		$('.datatable-1').dataTable();
+		$('.dataTables_paginate').addClass("btn-group datatable-pagination");
+		$('.dataTables_paginate > a').wrapInner('<span />');
+		$('.dataTables_paginate > a:first-child').append('<i class="icon-chevron-left shaded"></i>');
+		$('.dataTables_paginate > a:last-child').append('<i class="icon-chevron-right shaded"></i>');
+	} );
 	</script>
 </body>

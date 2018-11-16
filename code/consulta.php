@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+require_once('php/import.php');
+require_once('php/session.php');
+?>
+
 <head>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,13 +16,13 @@
         <link type="text/css" href="css/theme.css" rel="stylesheet">
         <link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
         <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'rel='stylesheet'>
-        <?php require_once 'functions.php'; ?>
+        <?php require_once 'php/functions.php'; ?>
 
 
     </head>
     <body>
         <?php
-        include('navbar.html');
+        include('navbar.php');
         ?>
         <div class="wrapper">
             <div class="container">
@@ -52,12 +58,12 @@
                 <b class="copyright">&copy; 2014 Edmin - EGrappler.com </b>All rights reserved.
             </div>
         </div>
-        <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
-        <script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+        <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="scripts/flot/jquery.flot.js" type="text/javascript"></script>
-        <script src="scripts/flot/jquery.flot.resize.js" type="text/javascript"></script>
-        <script src="scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
-        <script src="scripts/common.js" type="text/javascript"></script>
+        <script src="js/flot/jquery.flot.js" type="text/javascript"></script>
+        <script src="js/flot/jquery.flot.resize.js" type="text/javascript"></script>
+        <script src="js/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="js/common.js" type="text/javascript"></script>
 
     </body>

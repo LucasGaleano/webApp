@@ -1,6 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
+<?php
+require_once('php/import.php');
+require_once('php/session.php');
+?>
+
 <head>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,7 +20,7 @@
 <body>
 
 	<?php
-	include('navbar.html');
+	include('navbar.php');
 	?>
 
 
@@ -170,11 +175,11 @@
 		</div>
 	</div>
 
-	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
-	<script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="scripts/flot/jquery.flot.js" type="text/javascript"></script>
-	<script src="scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
+	<script src="js/flot/jquery.flot.js" type="text/javascript"></script>
+	<script src="js/datatables/jquery.dataTables.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.table-message tbody tr').click(
